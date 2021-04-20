@@ -208,5 +208,17 @@ public class Database {
         }
 
     }
+    public static void associateCourse() {
+        try {
+            insertStatements.add("INSERT INTO Course(CHM_ID, SEQUENCE_NO, MODEL_ID, COURSE_ID )"
+                    + "VALUES ('1','1','1','1')");
+
+            insertData(insertStatements);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
 
 }
