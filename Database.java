@@ -210,6 +210,7 @@ public class Database {
     }
     public static void associateCourse() {
         try {
+            String values = "VALUES('"+chmID+"','"+sNO+"',"+modelID+"',"+courseID+"')"
             insertStatements.add("INSERT INTO Course(CHM_ID, SEQUENCE_NO, MODEL_ID, COURSE_ID )"
                     + "VALUES ('1','1','1','1')");
 
